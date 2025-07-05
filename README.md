@@ -1,2 +1,26 @@
-# ME
-Product has completely changed the way I organize my daily tasks and connect with my audience. The seamless design and user-friendly interface make it a breeze to navigate. It's become an essential tool in my digital toolkit. Highly recommend! Get your new VCard page up and running in under 5 minutes.
+
+# ME — Personal Multimedia Identity
+
+Welcome to the **ME** repo — a personal, multimedia-driven portfolio and digital profile.
+Showcase your projects, art, writing, links, and Web3 identity.
+
+## Features
+
+- ⚡ Blazing fast and modern UI
+- 🎥 Supports photos, music, video, and audio
+- 🧬 Web3 integrations (ENS, REChain, IPFS, etc.)
+- 📝 Markdown-based blog support
+- 🌍 Easy deployment to Vercel, Netlify, etc.
+
+## Get Started
+
+```bash
+git clone https://github.com/sorydima/ME.git
+cd ME
+npm install
+npm run dev
+```
+
+## Author
+
+[Dmitry Sorokin](https://github.com/sorydima)

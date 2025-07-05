@@ -1,7 +1,14 @@
+# 📝 Changelog
 
-# Changelog
+All notable changes to this project will be documented here.
 
-## v0.1.0 - Initial Release (2025-07-05)
-- Initial Aurora OS adaptation
-- Flutter integration and UI optimizations
-- REChain DID support enabled
+## [1.0.0] - 2025-07-05
+
+### Added
+- Initial release of ME profile template
+- Wiki and documentation
+- Configuration examples
+- Markdown blog support (optional)
+- REChain + Web3 placeholder modules
+
+---
