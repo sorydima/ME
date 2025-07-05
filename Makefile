@@ -33,7 +33,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = com.nata.me1.0.0
-DISTDIR = /home/sorydev/me/.tmp/com.nata.me1.0.0
+DISTDIR = /home/sorydev/ME/.tmp/com.nata.me1.0.0
 LINK          = g++
 LFLAGS        = -Wl,--as-needed -specs=/usr/lib/rpm/aurora/pie-pic-ld -Wl,-z,relro,-z,now -Wl,--no-as-needed -Wl,-rpath,'/usr/$$LIB/cef' -Wl,-O1 -Wl,-rpath,/usr/share/com.nata.me/lib
 LIBS          = $(SUBLIBS) -laurorawebview -Wl,--no-as-needed /usr/lib64/cef/libcef.so -Wl,--as-needed -Wl,-rpath,/usr/lib64/cef -pie -rdynamic -lauroraapp -lappdir-cpp -lappdir -lappmanifest-glib -lglib-2.0 -pie -rdynamic -lmdeclarativecache5 -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread 
@@ -439,7 +439,7 @@ WebViewBrowser.o: src/WebViewBrowser.cpp
 
 install_qml: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/com.nata.me || mkdir -p $(INSTALL_ROOT)/usr/share/com.nata.me
-	-$(INSTALL_DIR) /home/sorydev/me/qml $(INSTALL_ROOT)/usr/share/com.nata.me/
+	-$(INSTALL_DIR) /home/sorydev/ME/qml $(INSTALL_ROOT)/usr/share/com.nata.me/
 
 uninstall_qml: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/com.nata.me/qml
@@ -458,7 +458,7 @@ uninstall_target: FORCE
 
 install_desktop: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/applications || mkdir -p $(INSTALL_ROOT)/usr/share/applications
-	-$(INSTALL_FILE) /home/sorydev/me/com.nata.me.desktop $(INSTALL_ROOT)/usr/share/applications/
+	-$(INSTALL_FILE) /home/sorydev/ME/com.nata.me.desktop $(INSTALL_ROOT)/usr/share/applications/
 
 uninstall_desktop: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/applications/com.nata.me.desktop
@@ -467,7 +467,7 @@ uninstall_desktop: FORCE
 
 install_icon86x86: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/icons/hicolor/86x86/apps || mkdir -p $(INSTALL_ROOT)/usr/share/icons/hicolor/86x86/apps
-	-$(INSTALL_FILE) /home/sorydev/me/icons/86x86/com.nata.me.png $(INSTALL_ROOT)/usr/share/icons/hicolor/86x86/apps/
+	-$(INSTALL_FILE) /home/sorydev/ME/icons/86x86/com.nata.me.png $(INSTALL_ROOT)/usr/share/icons/hicolor/86x86/apps/
 
 uninstall_icon86x86: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/icons/hicolor/86x86/apps/com.nata.me.png
@@ -476,7 +476,7 @@ uninstall_icon86x86: FORCE
 
 install_icon108x108: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/icons/hicolor/108x108/apps || mkdir -p $(INSTALL_ROOT)/usr/share/icons/hicolor/108x108/apps
-	-$(INSTALL_FILE) /home/sorydev/me/icons/108x108/com.nata.me.png $(INSTALL_ROOT)/usr/share/icons/hicolor/108x108/apps/
+	-$(INSTALL_FILE) /home/sorydev/ME/icons/108x108/com.nata.me.png $(INSTALL_ROOT)/usr/share/icons/hicolor/108x108/apps/
 
 uninstall_icon108x108: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/icons/hicolor/108x108/apps/com.nata.me.png
@@ -485,7 +485,7 @@ uninstall_icon108x108: FORCE
 
 install_icon128x128: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/icons/hicolor/128x128/apps || mkdir -p $(INSTALL_ROOT)/usr/share/icons/hicolor/128x128/apps
-	-$(INSTALL_FILE) /home/sorydev/me/icons/128x128/com.nata.me.png $(INSTALL_ROOT)/usr/share/icons/hicolor/128x128/apps/
+	-$(INSTALL_FILE) /home/sorydev/ME/icons/128x128/com.nata.me.png $(INSTALL_ROOT)/usr/share/icons/hicolor/128x128/apps/
 
 uninstall_icon128x128: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/icons/hicolor/128x128/apps/com.nata.me.png
@@ -494,7 +494,7 @@ uninstall_icon128x128: FORCE
 
 install_icon172x172: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/icons/hicolor/172x172/apps || mkdir -p $(INSTALL_ROOT)/usr/share/icons/hicolor/172x172/apps
-	-$(INSTALL_FILE) /home/sorydev/me/icons/172x172/com.nata.me.png $(INSTALL_ROOT)/usr/share/icons/hicolor/172x172/apps/
+	-$(INSTALL_FILE) /home/sorydev/ME/icons/172x172/com.nata.me.png $(INSTALL_ROOT)/usr/share/icons/hicolor/172x172/apps/
 
 uninstall_icon172x172: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/icons/hicolor/172x172/apps/com.nata.me.png
@@ -503,9 +503,9 @@ uninstall_icon172x172: FORCE
 
 install_qm: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/com.nata.me/translations || mkdir -p $(INSTALL_ROOT)/usr/share/com.nata.me/translations
-	lupdate -noobsolete /home/sorydev/me/src /home/sorydev/me/qml -ts /home/sorydev/me/translations/com.nata.me.ts /home/sorydev/me/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/me/translations/ru.auroraos.ChromiumBrowser-ru.ts && mkdir -p translations && [ "/home/sorydev/me" != "/home/sorydev/me" -a 1 -eq 1 ] && cp -af /home/sorydev/me/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/me/translations/ru.auroraos.ChromiumBrowser-ru.ts /home/sorydev/me/translations || : ; [ 1 -eq 1 ] && lrelease -nounfinished /home/sorydev/me/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/me/translations/ru.auroraos.ChromiumBrowser-ru.ts || :
-	-$(INSTALL_FILE) /home/sorydev/me/translations/ru.auroraos.ChromiumBrowser.qm $(INSTALL_ROOT)/usr/share/com.nata.me/translations/
-	-$(INSTALL_FILE) /home/sorydev/me/translations/ru.auroraos.ChromiumBrowser-ru.qm $(INSTALL_ROOT)/usr/share/com.nata.me/translations/
+	lupdate -noobsolete /home/sorydev/ME/src /home/sorydev/ME/qml -ts /home/sorydev/ME/translations/com.nata.me.ts /home/sorydev/ME/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/ME/translations/ru.auroraos.ChromiumBrowser-ru.ts && mkdir -p translations && [ "/home/sorydev/ME" != "/home/sorydev/ME" -a 1 -eq 1 ] && cp -af /home/sorydev/ME/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/ME/translations/ru.auroraos.ChromiumBrowser-ru.ts /home/sorydev/ME/translations || : ; [ 1 -eq 1 ] && lrelease -nounfinished /home/sorydev/ME/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/ME/translations/ru.auroraos.ChromiumBrowser-ru.ts || :
+	-$(INSTALL_FILE) /home/sorydev/ME/translations/ru.auroraos.ChromiumBrowser.qm $(INSTALL_ROOT)/usr/share/com.nata.me/translations/
+	-$(INSTALL_FILE) /home/sorydev/ME/translations/ru.auroraos.ChromiumBrowser-ru.qm $(INSTALL_ROOT)/usr/share/com.nata.me/translations/
 
 uninstall_qm: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/com.nata.me/translations/ru.auroraos.ChromiumBrowser-ru.qm

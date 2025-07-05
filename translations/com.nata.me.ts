@@ -23,7 +23,7 @@
 <context>
     <name>WebViewBrowser</name>
     <message>
-        <source>NataLee 007 ME</source>
+        <source>ME</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

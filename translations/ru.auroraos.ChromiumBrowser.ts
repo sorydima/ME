@@ -28,7 +28,7 @@
     <name>WebViewBrowser</name>
     <message>
         <location filename="../qml/WebViewBrowser.qml" line="8"/>
-        <source>NataLee 007 ME</source>
+        <source>ME</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
